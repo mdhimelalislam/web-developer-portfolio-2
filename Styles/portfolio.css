@@ -1,7 +1,7 @@
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 300 to 800
 
-.open-sans-<uniquifier> {
+body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
@@ -10,14 +10,6 @@
         "wdth" 100;
 }
 
-.text-primary {
-    color: #FD6E0A;
-    font-family: "Open Sans";
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-}
 
 .nav-title {
     color: #181818;
@@ -33,21 +25,20 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0px 70px 0px 230px;
 }
 
 nav>ul {
     display: flex;
     align-items: center;
-}
-
-nav li {
     list-style-type: none;
 }
+
 
 nav a {
     text-decoration: none;
     margin-right: 50px;
-    color: #474747);
+    color: #474747;
     font-family: "Open Sans";
     font-size: 20px;
     font-style: normal;
@@ -55,6 +46,14 @@ nav a {
     line-height: normal;
 }
 
+.text-primary {
+    color: #FD6E0A;
+    font-family: "Open Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
 
 .btn-primary {
     color: #FFF;
@@ -63,10 +62,67 @@ nav a {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 150px;
-    height: 65px;
     flex-shrink: 0;
     border-radius: 5px;
     background: #FD6E0A;
     border: none;
+    padding: 15px 35px;
+}
+
+.header {
+    max-height: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
+    background-color: #FFF8F3;
+    background-image: url('../Images/header_bg.png'), url('../Images/developer.png');
+    background-repeat: no-repeat;
+    background-position: right bottom, top left;
+
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px 0px 230px;
+    max-width: 1350;
+}
+
+.profile-pic {
+    margin-right: 35px;
+    max-width: 30%;
+}
+
+.banner-greeting {
+    color: #474747;
+    font-family: "Open Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 180px;
+    margin-bottom: 0px;
+    max-width: 50%;
+}
+
+.banner-title {
+    color: #181818;
+    font-family: "Open Sans";
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    max-width: 50%;
+}
+
+.banner-description {
+    color: #757575;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 70%;
+    margin-top: 0px;
 }
